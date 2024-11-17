@@ -1,0 +1,336 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9e7e7;
+    color: #333;
+  }
+  
+  .home-container {
+    text-align: center;
+    padding-top: 80px;
+  }
+  
+  
+  .header {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 70px;
+  }
+  
+  .portfolio-title {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin: 0;
+  }
+  
+  .nav a {
+    font-size: 20px ;
+    margin: 0 10px;
+    margin-right: 100px;
+    text-decoration: none;
+    /* font-weight: bold; */
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #1a73e8;
+  }
+  
+
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    margin-top: 80px;
+  }
+  
+  .image-container {
+    margin-right: 40px;
+  }
+  
+  .profile-image {
+    position: relative;
+    top: -80px;
+    left: -100px;
+    bottom: 150px;
+    right: 20px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    
+    /* box-shadow: 20px solid black; */
+  }
+  
+  .text-container {
+    margin:100px 10px 300px 150px;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .intro {
+    font-size: 2.5rem;
+  }
+  
+  .name {
+    color: #1a73e8;
+  }
+
+  i{
+    width: 50px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: 80px;
+  }
+  .icons{
+    width: 100% auto;
+    margin-left: 20px;
+  }
+  .icons:hover{
+    .box {
+      box-shadow: 5px 5px 10px gray, -5px -5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    cursor:pointer;
+  }
+
+  .animated-text {
+    font-family: "Sen",sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 10px 0;
+    color: #0711FF;
+  }
+  
+  .animated-text .role {
+    display: inline-block;
+    opacity: 0;
+    animation: letterFadeIn 12s forwards infinite;
+    
+  }
+  
+  .animated-text .role:nth-child(1) { animation-delay: 0.5s; }
+  .animated-text .role:nth-child(2) { animation-delay: 1s; }
+  .animated-text .role:nth-child(3) { animation-delay: 1.5s; }
+  .animated-text .role:nth-child(4) { animation-delay: 2s; }
+  .animated-text .role:nth-child(5) { animation-delay: 2.5s; }
+  .animated-text .role:nth-child(6) { animation-delay: 3s; }
+  .animated-text .role:nth-child(7) { animation-delay: 3.5s; }
+  .animated-text .role:nth-child(8) { animation-delay: 4s; }
+  .animated-text .role:nth-child(9) { animation-delay: 4.5s; }
+  .animated-text .role:nth-child(10) { animation-delay: 5s; }
+  .animated-text .role:nth-child(11) { animation-delay: 5.5s; }
+  .animated-text .role:nth-child(12) { animation-delay: 6s; }
+  .animated-text .role:nth-child(13) { animation-delay: 6.5s; }
+  .animated-text .role:nth-child(14) { animation-delay: 7s; }
+  .animated-text .role:nth-child(15) { animation-delay: 7.5s; }
+  .animated-text .role:nth-child(16) { animation-delay: 8s; }
+  .animated-text .role:nth-child(17) { animation-delay: 8.5s; }
+  .animated-text .role:nth-child(18) { animation-delay: 9s; }
+  .animated-text .role:nth-child(19) { animation-delay: 9.5s; }
+  .animated-text .role:nth-child(20) { animation-delay: 10s; }
+  .animated-text .role:nth-child(21) { animation-delay: 10.5s; }
+  .animated-text .role:nth-child(22) { animation-delay: 11s; }
+  .animated-text .role:nth-child(23) { animation-delay: 11.5s; }
+  
+  @keyframes letterFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+
+  .description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+ 
+
+  
+  .buttons {
+    margin-top: 40px;
+    width: 600px;
+  }
+  
+  .hire-me,
+  .resume {
+    
+    display: inline;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background: #1a73e8;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 50px 130px 0 10px;
+    transition: background 0.3s;
+  }
+  .resume{
+    position:relative;
+    left: 90px;
+  }
+  
+  .hire-me:hover,
+  .resume:hover {
+    background: #1558b3;
+  }
+  
+
+  @media (max-width: 768px) {
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e9e7e7;
+      color: #333;
+    }
+  
+    .home-container {
+      text-align: center;
+      padding-top: 60px;
+    }
+  
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: auto;
+    }
+  
+    .portfolio-title {
+      font-size: 1.5rem;
+      color: #1a73e8;
+      margin: 0 0 10px 0;
+    }
+  
+    .nav a {
+      font-size: 16px;
+      margin: 5px;
+      text-decoration: none;
+      color: #333;
+      font-family: 'Times New Roman', Times, serif;
+      transition: color 0.3s;
+    }
+  
+    .nav a:hover {
+      color: #1a73e8;
+    }
+  
+    .main-content {
+      flex-direction: column;
+      margin-top: 100px;
+      padding: 20px;
+    }
+  
+    .image-container {
+      margin-bottom: 20px;
+    }
+  
+    .profile-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  
+    .text-container {
+      margin: 0 auto;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .intro {
+      font-size: 1.8rem;
+    }
+  
+    .name {
+      color: #1a73e8;
+    }
+  
+    i {
+      width: 30px;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+  
+    .icons {
+      width: auto;
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .animated-text {
+      font-family: "Sen", sans-serif;
+      font-weight: bold;
+      letter-spacing: 5px;
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #0711FF;
+    }
+  
+    .description {
+      font-size: 1rem;
+      margin: 20px 0;
+    }
+  
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .hire-me,
+    .resume {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      width: 80%;
+      text-align: center;
+    }
+  
+    .hire-me {
+      margin: 0;
+    }
+  
+    .resume {
+      margin: 0;
+    }
+  
+    .hire-me:hover,
+    .resume:hover {
+      background: #1558b3;
+    }
+  }
+  
